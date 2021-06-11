@@ -1,0 +1,363 @@
+/* 
+========================================================
+DESIGNED BY : IMAM NC
+========================================================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather+Sans&display=swap');
+
+/* 
+    GLOBAL
+*/
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.font-archivo {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.font-merri {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.btn-custom {
+    background: #429183;
+    padding: 15px 45px;
+    color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn-custom:hover {
+    background: #429183;
+    text-decoration: none;
+    color: #ffffff;
+    transition: ease 0.3s;
+}
+
+.form-custom {
+    border-radius: 30px !important;
+    padding: 10px 20px;
+}
+
+.bg-theme {
+    background: #429183;
+}
+
+.bg-theme-secondary {
+    background: #f3e8d7;
+}
+
+.text-theme {
+    color: #429183;
+}
+
+.text-theme-secondary {
+    color: #f3e8d7;
+}
+
+
+/* 
+    HEADER
+*/
+
+.header {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: auto;
+}
+
+.header .navbar .nav-link {
+    color: #429183;
+    font-weight: bold;
+}
+
+
+/* 
+    HERO
+*/
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: #dbe2e6;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 80px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.hero .image-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    height: 100vh;
+    background: url('./img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 10;
+    margin-top: 180px;
+}
+
+.hero .hero-content img {
+    width: 45%;
+}
+
+@media (max-width: 575.98px) {
+    .hero .hero-content img {
+        width: 90%;
+    }
+    .hero .hero-content {
+        margin-top: 230px;
+    }
+    .hero h1 {
+        font-size: 50px;
+    }
+    .navbar-collapse {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        background: #ffffff;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .section-title {
+        margin-bottom: 70px !important;
+    }
+    .section-title hr {
+        display: none;
+    }
+}
+
+
+/* 
+    ABOUT US
+*/
+
+.aboutus {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #429183;
+}
+
+.aboutus .section-title {
+    font-size: 25px;
+}
+
+.aboutus .section-title hr {
+    display: inline-block;
+    width: 150px;
+    height: 3px;
+    background: #f3e8d7;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.aboutus .wave1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    z-index: 0;
+}
+
+.aboutus .frame-about-image {
+    display: inline-block;
+    overflow: hidden;
+    width: 75%;
+    background: #2d3436;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.aboutus .frame-about-image img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.about-carousel .carousel-cell {
+    width: 49%;
+    height: 170px;
+    margin-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .about-carousel .carousel-cell {
+        width: 100% !important;
+    }
+}
+
+
+/* 
+    MENU
+*/
+
+.menu {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #f3e8d7;
+}
+
+.menu .section-title {
+    position: relative;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 32px;
+}
+
+.menu .section-title span {
+    padding-left: 20px;
+    padding-right: 100px;
+    position: relative;
+    z-index: 5;
+}
+
+.menu hr {
+    display: inline-block;
+    width: 80%;
+    height: 3px;
+    background: #429183;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.menu .menu-image {
+    width: 90%;
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.4));
+}
+
+.menu .card {
+    border-radius: 20px;
+    padding: 15px 10px;
+}
+
+.menu .card img {
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 70%;
+    transform: rotate(350deg);
+}
+
+
+/* 
+    EVENT
+*/
+
+.event {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #f3e8d7;
+}
+
+.event .section-title {
+    font-size: 25px;
+}
+
+.event .section-title hr {
+    display: inline-block;
+    width: 150px;
+    height: 3px;
+    background: #429183;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.event .wave1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    z-index: 0;
+}
+
+.event .frame-event-image {
+    width: 100%;
+    background: #2d3436;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.event .frame-event-image img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.event-carousel .carousel-cell {
+    width: 49%;
+    height: 170px;
+    margin-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .event-carousel .carousel-cell {
+        width: 100% !important;
+    }
+}
+
+
+/* 
+    CONTACT
+*/
+
+.contact {
+    padding: 0;
+    background: #f3e8d7;
+}
+
+.contact-image {
+    height: 200px;
+}
+
+
+/* 
+--------------------------------------------------------------------------
+ FLICKITY SLIDER STYLE
+-------------------------------------------------------------------------- 
+*/
+
+.flickity-button {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.flickity-button:hover {
+    background: #ffffff;
+    transition: ease 0.3s;
+}
+
+.flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.flickity-button-icon {
+    fill: #429183;
+}
